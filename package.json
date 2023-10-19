@@ -1,0 +1,97 @@
+{
+  "name": "ts-data-structures-and-algorithms",
+  "version": "0.0.0-semantic-release",
+  "description": "Popular Data Structures and Algorithms done in TypeScript",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "gc": "git add . && git-cz",
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akhenda/es6-data-structures-and-algorithms.git"
+  },
+  "keywords": [
+    "data-structures",
+    "algorithms",
+    "data-structures-and-algorithms",
+    "es6",
+    "es2015"
+  ],
+  "author": "Joseph Akhenda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akhenda/es6-data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/akhenda/es6-data-structures-and-algorithms#readme",
+  "devDependencies": {
+    "@commitlint/cli": "17.8.0",
+    "@commitlint/config-conventional": "17.8.0",
+    "@hendacorp/eslint-plugin": "1.0.2",
+    "@hendacorp/typescript-configs": "1.0.3",
+    "@jest/globals": "29.7.0",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/git": "10.0.1",
+    "@shopify/eslint-plugin": "^43.0.0",
+    "@types/jest": "29.5.6",
+    "@typescript-eslint/eslint-plugin": "^6.8.0",
+    "@typescript-eslint/parser": "^6.8.0",
+    "commitizen": "4.3.0",
+    "cz-customizable": "7.0.0",
+    "eslint": "8.51.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "husky": "8.0.3",
+    "jest": "29.7.0",
+    "jest-extended": "4.0.2",
+    "prettier": "3.0.3",
+    "semantic-release": "22.0.5",
+    "ts-jest": "29.1.1",
+    "typescript": "5.2.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": ".cz-config.js"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "release": {
+    "branch": "develop",
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ],
+    "getLastRelease": "@semantic-release/git",
+    "prepare": [
+      {
+        "path": "@semantic-release/changelog",
+        "changelogFile": "docs/CHANGELOG.md"
+      },
+      {
+        "path": "@semantic-release/npm",
+        "npmPublish": false
+      },
+      {
+        "path": "@semantic-release/git",
+        "assets": [
+          "package.json",
+          "docs"
+        ],
+        "message": "chore(release): v${nextRelease.version} - <%= new Date().toLocaleDateString('en-US', {year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric'}) %> [skip ci]\n\n${nextRelease.notes}"
+      }
+    ],
+    "publish": [
+      "@semantic-release/github"
+    ]
+  }
+}
