@@ -1,10 +1,6 @@
 # TypeScript Algorithms and Data Structures
 
-[![Build Status](https://travis-ci.org/akhenda/es6-data-structures-and-algorithms.svg?branch=develop)](https://travis-ci.org/akhenda/es6-data-structures-and-algorithms)
-[![codecov](https://codecov.io/gh/akhenda/es6-data-structures-and-algorithms/branch/develop/graph/badge.svg)](https://codecov.io/gh/akhenda/es6-data-structures-and-algorithms)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f8d6910025c5402f8d9a232155a3a420)](https://www.codacy.com/app/joseph-akhenda/es6-data-structures-and-algorithms?utm_source=github.com&utm_medium=referral&utm_content=akhenda/es6-data-structures-and-algorithms&utm_campaign=Badge_Grade)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/f8d6910025c5402f8d9a232155a3a420)](https://www.codacy.com/app/joseph-akhenda/es6-data-structures-and-algorithms?utm_source=github.com&utm_medium=referral&utm_content=akhenda/es6-data-structures-and-algorithms&utm_campaign=Badge_Coverage)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/akhenda/es6-data-structures-and-algorithms/blob/develop/LICENSE) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![Test & Release](https://github.com/akhenda/ts-data-structures-and-algorithms/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/akhenda/ts-data-structures-and-algorithms/actions/workflows/ci.yml) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) ![Branches](./badges/coverage-branches.svg) ![Functions](./badges/coverage-functions.svg) ![Lines](./badges/coverage-lines.svg) ![Statements](./badges/coverage-statements.svg) ![Jest coverage](./badges/coverage-jest%20coverage.svg)
 
 This repository contains some popular Data Structures and Algorithms done in TypeScript.
 
@@ -202,13 +198,13 @@ Below is the list of some of the most used Big O notations and their performance
 Clone this repo:
 
 ```sh
-git clone https://github.com/akhenda/es6-data-structures-and-algorithms.git
+git clone https://github.com/akhenda/ts-data-structures-and-algorithms.git
 ```
 
-Navigate to the `es6-data-structures-and-algorithms` directory:
+Navigate to the `ts-data-structures-and-algorithms` directory:
 
 ```sh
-cd es6-data-structures-and-algorithms
+cd ts-data-structures-and-algorithms
 ```
 
 Install the required dependencies:

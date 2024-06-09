@@ -6,7 +6,7 @@ module.exports = {
   maxMessageLength: 64,
   minMessageLength: 3,
   questions: ['type', 'scope', 'subject', 'body', 'breaking', 'issues', 'lerna'],
-  scopes: ['ds', 'algorithms', 'tests', 'deps', 'deploy'],
+  scopes: ['', 'ds', 'algorithms', 'tests', 'deps', 'deploy'],
   types: {
     build: {
       description: 'Changes that affect the build system or external dependencies',
