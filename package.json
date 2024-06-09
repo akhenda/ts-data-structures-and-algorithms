@@ -5,23 +5,22 @@
   "main": "index.js",
   "author": "Joseph Akhenda",
   "license": "MIT",
-  "homepage": "https://github.com/akhenda/es6-data-structures-and-algorithms#readme",
+  "homepage": "https://github.com/akhenda/ts-data-structures-and-algorithms#readme",
   "bugs": {
-    "url": "https://github.com/akhenda/es6-data-structures-and-algorithms/issues"
+    "url": "https://github.com/akhenda/ts-data-structures-and-algorithms/issues"
   },
   "directories": {
     "doc": "docs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akhenda/es6-data-structures-and-algorithms.git"
+    "url": "git+https://github.com/akhenda/ts-data-structures-and-algorithms.git"
   },
   "keywords": [
     "data-structures",
     "algorithms",
     "data-structures-and-algorithms",
-    "es6",
-    "es2015"
+    "TypeScript"
   ],
   "scripts": {
     "gc": "git add . && cz",

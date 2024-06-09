@@ -2,6 +2,9 @@
 /node_modules
 .eslintrc.js
 .eslintrc.cjs
+.prettier.cjs
+.releaserc
+release.config.cjs
 coverage
 /coverage
 .npmrc
