@@ -1,11 +1,11 @@
 /dist
 /node_modules
 .eslintrc.js
-jest.config.js
+.eslintrc.cjs
 coverage
 /coverage
 .npmrc
-
 .github
-tsconfig.json
 package.json
+tsconfig.json
+jest.config.js
