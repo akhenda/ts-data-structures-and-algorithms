@@ -1,5 +1,9 @@
 {
-  "branch": "develop",
+  "dryRun": true,
+  "branches": [
+    "main",
+    "dev"
+  ],
   "verifyConditions": [
     "@semantic-release/changelog",
     "@semantic-release/git",

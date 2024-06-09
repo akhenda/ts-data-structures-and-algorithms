@@ -26,7 +26,9 @@
   "scripts": {
     "gc": "git add . && cz",
     "gc-ai": "git add . && bunx czg ai -N=5",
-    "test": "jest --runInBand --detectOpenHandles --watchAll"
+    "lint": "eslint src --ext .ts",
+    "test:watch": "jest --runInBand --detectOpenHandles --watchAll",
+    "test": "jest"
   },
   "config": {
     "commitizen": {
