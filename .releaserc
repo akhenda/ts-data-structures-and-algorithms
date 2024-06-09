@@ -1,8 +1,13 @@
 {
   "dryRun": true,
+  "debug": true,
   "branches": [
     "main",
-    "dev"
+    {
+      "name": "dev",
+      "prerelease": true,
+      "channel": "beta"
+    }
   ],
   "verifyConditions": [
     "@semantic-release/changelog",

@@ -2,10 +2,19 @@ name: DSA CI
 
 on: [push]
 
+permissions:
+  contents: read # for checkout
+
 jobs:
   build:
 
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
 
     steps:
       - name: Checkout
@@ -46,10 +55,19 @@ jobs:
       #   run: pnpm run lint
 
       - name: Test
-        run: pnpm run test
+        run: pnpm run test:ci
 
       # - name: Build
       #   run: pnpm run build --if-present
 
-      - name: Release
-        run: npx semantic-release
+      - name: Generating coverage badges
+        uses: jpb06/jest-badges-action@latest
+        with:
+          branches: main,dev
+          commit-message: "chore(deploy): update coverage badges [skip ci]"
+
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

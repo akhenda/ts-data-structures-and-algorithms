@@ -26,8 +26,10 @@
     "gc": "git add . && cz",
     "gc-ai": "git add . && bunx czg ai -N=5",
     "lint": "eslint src --ext .ts",
+    "preinstall": "npx only-allow pnpm",
     "test:watch": "jest --runInBand --detectOpenHandles --watchAll",
-    "test": "jest"
+    "test": "jest",
+    "test:ci": "jest --ci"
   },
   "config": {
     "commitizen": {
