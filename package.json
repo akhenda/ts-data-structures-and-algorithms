@@ -37,8 +37,8 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "19.4.0",
-    "@commitlint/config-conventional": "19.2.2",
+    "@commitlint/cli": "19.4.1",
+    "@commitlint/config-conventional": "19.4.1",
     "@hendacorp/eslint-plugin": "1.0.5",
     "@hendacorp/typescript-configs": "1.0.5",
     "@jest/globals": "29.7.0",
