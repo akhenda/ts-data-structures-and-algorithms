@@ -1,4 +1,4 @@
-## Array
+# Array
 
 According to Wikipedia:
 
@@ -6,13 +6,13 @@ According to Wikipedia:
 
 Arrays are among the oldest and most important data structures and are used by every program. They are also used to implement many other data structures.
 
-### Complexity
+## Complexity
 
-#### Average
+### Average
 
 | Operation | Complexity |
 | :-------: | :--------: |
-| Access    | O(1)       |
-| Search    | O(n)       |
-| Insertion | O(n)       |
-| Deletion  | O(n)       |
+|  Access   |    O(1)    |
+|  Search   |    O(n)    |
+| Insertion |    O(n)    |
+| Deletion  |    O(n)    |

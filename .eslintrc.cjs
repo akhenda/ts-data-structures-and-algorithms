@@ -22,5 +22,6 @@ module.exports = {
     // '@typescript-eslint/consistent-indexed-object-style': ['error', 'record'],
     // 'no-console': ['error', { allow: ['info', 'warn', 'error', 'table'] }],
     // 'no-undef': 'off',
+    '@typescript-eslint/naming-convention': 'off',
   },
 };

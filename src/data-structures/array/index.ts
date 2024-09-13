@@ -4,7 +4,7 @@ export default class MyArray<T> {
   /**
    * initialize MyArray
    *
-   * in this case we'll use JavaScript built-in object
+   * in this case we'll use JavaScript built-in Map
    */
   constructor(...args: T[]) {
     for (let index = 0; index < args.length; index++) {
@@ -79,7 +79,7 @@ export default class MyArray<T> {
    * @param  {number} index index of the item to get
    * @return {T}       the item found at the given index
    */
-  getAtIndex(index: number) {
+  at(index: number) {
     return this.array.get(index);
   }
 
@@ -88,7 +88,7 @@ export default class MyArray<T> {
    *
    * @return {number} the size of the array
    */
-  length() {
+  get length() {
     return this.array.size;
   }
 

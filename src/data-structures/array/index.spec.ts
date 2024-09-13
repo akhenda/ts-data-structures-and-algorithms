@@ -11,26 +11,26 @@ describe('Array', () => {
   describe('when we add to the array', () => {
     it('adds "1" to the array', () => {
       array.add(1);
-      expect(array.length()).toBe(1);
+      expect(array).toHaveLength(1);
     });
 
     it('adds "2" to the array', () => {
       array.add(2);
-      expect(array.length()).toBe(2);
+      expect(array).toHaveLength(2);
     });
 
     it('adds "3" to the array', () => {
       array.add(3);
-      expect(array.length()).toBe(3);
+      expect(array).toHaveLength(3);
     });
 
     it('adds "4" to the array', () => {
       array.add(4);
-      expect(array.length()).toBe(4);
+      expect(array).toHaveLength(4);
     });
 
     it('has a length of 4', () => {
-      expect(array.length()).toBe(4);
+      expect(array).toHaveLength(4);
     });
 
     it('prints all the elements we have just added to the array', () => {
@@ -44,7 +44,7 @@ describe('Array', () => {
     });
 
     it('gets element at index "2"', () => {
-      expect(array.getAtIndex(2)).toBe(3);
+      expect(array.at(2)).toBe(3);
     });
   });
 
@@ -56,12 +56,12 @@ describe('Array', () => {
 
     it('adds "5" to the array', () => {
       array.add(5);
-      expect(array.length()).toBe(4);
+      expect(array).toHaveLength(4);
     });
 
     it('adds another "5" to the array', () => {
       array.add(5);
-      expect(array.length()).toBe(5);
+      expect(array).toHaveLength(5);
     });
 
     it('prints out the array again', () => {
