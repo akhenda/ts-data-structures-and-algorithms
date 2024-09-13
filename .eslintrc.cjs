@@ -23,5 +23,9 @@ module.exports = {
     // 'no-console': ['error', { allow: ['info', 'warn', 'error', 'table'] }],
     // 'no-undef': 'off',
     '@typescript-eslint/naming-convention': 'off',
+    '@typescript-eslint/member-ordering': [
+      'error',
+      { classes: ['field', 'constructor', 'accessor', 'set', 'get', 'method'] },
+    ],
   },
 };
